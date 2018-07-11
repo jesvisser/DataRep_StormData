@@ -25,11 +25,14 @@ These answers are obtained by analysing the U.S. National Oceanic and Atmospheri
 
 The registerations in the NOAA started in the year 1950 and ended in November 2011. This database tracks characteristics of major storms and weather events in the United States, including when and where they occur, as well as estimates of any fatalities, injuries, and property damage. This data is provided in csv and loaded in R.
 
-```{r load_data, echo = TRUE, cache = TRUE, message=FALSE, warning=FALSE}
+```{r libraries, echo=TRUE, message=FALSE, warning=FALSE}
 library(readr)
 library(dplyr)
 library(tidyr)
 library(ggplot2)
+```
+
+```{r load_data, echo = TRUE, cache = TRUE, message=FALSE, warning=FALSE}
 storm_data <- read_csv("repdata%2Fdata%2FStormData.csv.bz2")
 ```
 
